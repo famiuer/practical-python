@@ -5,7 +5,7 @@
 def portfolio_cost(filename):
     f = open(filename, 'rt')
 
-    headers = next(f).split(',')
+    #headers = next(f).split(',')
     #print(headers)
     sum = 0
     for line in f:
@@ -21,5 +21,5 @@ if len(sys.argv) == 2:
     filename = sys.argv[1]
 else:
     filename = 'Data/portfolio.csv'
-cost = portfolio_cost(filename)
+#portfolio_cost(filename)
 #print('Total cost:', cost)
